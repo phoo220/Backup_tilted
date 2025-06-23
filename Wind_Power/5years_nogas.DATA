@@ -1,0 +1,45 @@
+INCLUDE
+'../No_Gas/base_tilted_coarse.INC' / 
+
+SCHEDULE
+---------------------------------------------------------------------------
+TUNING
+  1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1E20 1* /
+  /
+/
+
+-- RPTSCHED
+--    'PRES' /
+
+RPTRST
+   'BASIC=1' /
+
+DRSDT
+   0/
+
+WELSPECS
+-- Name   	Group	I  J                	 Cross Flow
+  'TOP'	  	'G1' 	6  6  1* 'WAT' 0.0 STD OPEN NO	1*/
+  'BOTTOM'	'G1'	6  6  1* 'WAT' 0.0 STD OPEN NO	1*/
+/
+
+COMPDAT
+	'TOP'  		6	     6   	1	 1  	'OPEN'	1*	1*	0.3 /
+	'BOTTOM' 	6	     6   	3  3	  'OPEN'	1*	1*	0.3 /
+/
+
+COMPLUMP
+	'TOP'		  1*	1*	1	 1  	1/
+	'BOTTOM'	1*	1*	3	 3 	  2/
+/
+
+UDQ
+	DEFINE	WUDPR	(RPR 2) - (RPR 1)	/
+/
+
+
+INCLUDE
+ './Profile_5year_midBHP.INC' /
+
+
+END
