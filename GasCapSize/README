@@ -1,1 +1,5 @@
-Different Gas Cap sizes in both layers
+Different Gas Cap sizes in both layers.
+Use the same PROPS_tilted_gas.INC and PROPS_JUSTWATER.INC from Wind_Power folder
+"G" data files use the wind_power schedules
+"Z" data files are used to test the maximum capacity of the layers; i.e, charge and discharge with the same rate until max capacity is reached. 
+
