@@ -1,4 +1,4 @@
 Charging/Discharging for 5 years based on Wind Power 
 - Three BHP ranges
 - Two reservoirs with or without gas cap
-- The two data files without the mention of specific BHP ranges are for mid-range BHP range with coarse grids
+- The two data files without the mention of specific BHP ranges are for mid-range BHP range with coarse grids. Except for this sensitivity test, all other test uses the refined grids.
